@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#cfc7b7">
+  <title>404 - Not Found</title>
+
+  <style>
+    :root {
+      --retro-paper: #e7e2d7;
+      --retro-sand: #cfc7b7;
+      --retro-stone: #b7ad9d;
+      --retro-ink: #4b333f;
+      --retro-rose: #9f4e6a;
+      --retro-sage: #618170;
+      --retro-mist: #8ea69b;
+      --retro-ochre: #c9a64e;
+      --retro-rust: #b96b4d;
+      --retro-charcoal: #343434;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; background: var(--retro-sand); }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 24px;
+      color: var(--retro-ink);
+      background:
+        linear-gradient(135deg, rgba(97,129,112,.13), transparent 42%),
+        linear-gradient(315deg, rgba(159,78,106,.10), transparent 48%),
+        var(--retro-sand);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    .page {
+      width: 100%;
+      max-width: 760px;
+      margin: 8vh auto 0;
+      padding: 54px 34px 38px;
+      background: var(--retro-paper);
+      border: 1px solid var(--retro-stone);
+      border-top: 7px solid var(--retro-sage);
+      x-box-shadow: 0 12px 34px rgba(52,52,52,.13);
+    }
+
+    .mark {
+      width: 54px;
+      height: 5px;
+      margin: 0 auto 25px;
+      background: var(--retro-rose);
+    }
+
+    h1 {
+      margin: 0 0 23px;
+      color: var(--retro-charcoal);
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.15;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 12px auto;
+      max-width: 620px;
+      color: var(--retro-ink);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--retro-rose);
+      font-weight: 700;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover, a:focus { color: var(--retro-rust); }
+
+    .note {
+      display: inline-block;
+      margin-top: 13px;
+      padding: 7px 13px;
+      color: var(--retro-charcoal);
+      background: var(--retro-mist);
+      border-left: 4px solid var(--retro-sage);
+      font-size: .88rem;
+      letter-spacing: .04em;
+    }
+
+    .signature {
+      margin-top: 24px;
+      color: var(--retro-sage);
+      font-size: 1rem;
+    }
+
+    .palette {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin: 38px auto 0;
+    }
+
+    .palette span { display: block; width: 27px; height: 7px; }
+    .palette span:nth-child(1) { background: var(--retro-paper); border: 1px solid var(--retro-stone); }
+    .palette span:nth-child(2) { background: var(--retro-sand); }
+    .palette span:nth-child(3) { background: var(--retro-stone); }
+    .palette span:nth-child(4) { background: var(--retro-ink); }
+    .palette span:nth-child(5) { background: var(--retro-rose); }
+    .palette span:nth-child(6) { background: var(--retro-sage); }
+    .palette span:nth-child(7) { background: var(--retro-mist); }
+    .palette span:nth-child(8) { background: var(--retro-ochre); }
+    .palette span:nth-child(9) { background: var(--retro-rust); }
+    .palette span:nth-child(10) { background: var(--retro-charcoal); }
+
+    footer {
+      margin-top: 18px;
+      color: var(--retro-ink);
+      font-size: .76rem;
+      opacity: .8;
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 14px; }
+      .page { margin-top: 5vh; padding: 42px 21px 30px; }
+      p { font-size: 1rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+    <div class="mark" aria-hidden="true"></div>
+
+    <h1>404 - Not Found</h1>
+
+    <p>
+      The requested resource could not be found.
+      It may have been moved, renamed, or no longer exists.
+    </p>
+
+    <p>
+      Please check the address and try again.
+    </p>
+
+    <p>
+      <a href="/?q=index">Return to the homepage</a>
+    </p>
+
+    <div class="note">HTTP 404 &middot; Not Found</div>
+
+    <p class="signature">.github.io</p>
+
+    <div class="palette" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <footer> </footer>
+  </main>
+</body>
+</html>
